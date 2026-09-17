@@ -1,0 +1,13 @@
+name = "runak-url-pinger"
+main = "pinger.js"
+compatibility_date = "2023-12-01"
+
+[triggers]
+# Runs every minute
+crons = ["* * * * *"]
+
+[vars]
+# Add one numbered key per URL you want pinged.
+"1" = "https://example1.com"
+"2" = "https://example2.com"
+"3" = "https://example3.com"
